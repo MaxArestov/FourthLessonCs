@@ -10,26 +10,16 @@ if (!checkDigit)
     Console.WriteLine("Введены некорректные данные: ");
     return;
 }
-// Console.WriteLine(DigitCount(a));
-Console.WriteLine(DigitCount1(a));
+Console.WriteLine(DigitCount(a));
 
 
 int DigitCount(int num)
 {
-    int count = 1;
-    while ((num / 10) != 0)
+    int count = 0;
+    while (num != 0)
     {
         num = num / 10;
         count++;
     }
     return count;
-}
-int DigitCount1(int number)
-{
-    int i = 0;
-    for (i = 0; i <=number; i++)
-    {
-        number = number / 10;
-    }
-    return i;
 }
